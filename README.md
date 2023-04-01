@@ -16,18 +16,18 @@ se pot face în cadrul sistemului și o lista cu cel puțin 8 tipuri de obiecte.
 (conturi, extras de cont, tranzactii, carduri, servicii)
 
 ### Actiuni / Interogari:
- - Creare client (creare_client)
- - Creare card (create_card)
- - Afisare date client (get_customer)
- - Extras de cont total client (get_customer_amount)
- - Afisare conturi client (get_customer_accounts)
- - Afisare cont client (get_customer_account)
- - Incarcare cont client (load_customer_account)
- - Creare tranzactie (create_transaction)
- - Creare cont bancar (create_customer_account)
- - Creare cont economii (create_customer_savings_account)
- - Inchidere cont bancar (close_customer_account)
- - Afisare istoric tranzactii (get_customer_transactions)
+ - Creare client 
+ - Creare card 
+ - Afisare date client 
+ - Extras de cont total client
+ - Afisare conturi client 
+ - Afisare cont client 
+ - Incarcare cont client 
+ - Creare tranzactie 
+ - Creare cont bancar 
+ - Creare cont economii
+ - Inchidere cont bancar 
+ - Afisare istoric tranzactii 
 
 ### Obiecte:
  - Account (+ AccountFactory)
