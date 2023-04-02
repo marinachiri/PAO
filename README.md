@@ -30,12 +30,15 @@ se pot face în cadrul sistemului și o lista cu cel puțin 8 tipuri de obiecte.
  - Afisare istoric tranzactii 
 
 ### Obiecte:
- - Account 
-  - SavingsAccount
- - Card 
- - Visa
-  - MasterCard
- - Transaction
- - Customer
-  - Address
+   - Account 
+   - SavingsAccount
+   - Card 
+   - Visa
+   - MasterCard
+   - Transaction
+   - Customer
+   - Address
+   - service
+   - Main
+  
 
