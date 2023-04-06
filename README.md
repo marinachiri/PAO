@@ -19,7 +19,6 @@ se pot face în cadrul sistemului și o lista cu cel puțin 8 tipuri de obiecte.
  - Creare client 
  - Creare card 
  - Afisare date client 
- - Extras de cont total client
  - Afisare conturi client 
  - Afisare cont client 
  - Incarcare cont client 
