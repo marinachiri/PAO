@@ -13,6 +13,9 @@ public class Account {
     protected int customerId;
     protected List<Card> cards = new ArrayList<>();
 
+
+
+
     public Account(String IBAN, String swift, double amount, String name, int customerId) {
         this.IBAN = IBAN;
         this.swift = swift;

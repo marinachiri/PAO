@@ -2,6 +2,7 @@ package Card;
 
 
 import java.nio.charset.StandardCharsets;
+import java.time.LocalDate;
 import java.util.*;
 
 public class Card {
@@ -29,7 +30,16 @@ public class Card {
 
     }
 
+    private String generateCardNumber(){
+        byte[] array = new byte[16];
+        new Random().nextBytes(array);
+        return new String(array, StandardCharsets.UTF_8);
+    }
 
+    public static int generateCardCVV(){
+        var rand = new Random();
+        return 100 + rand.nextInt(899);
+    }
     public int getCardId() {
         return cardId;
     }

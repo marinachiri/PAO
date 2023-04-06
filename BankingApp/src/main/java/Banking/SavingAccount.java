@@ -1,22 +1,15 @@
 package Banking;
 
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.*;
 
 public class SavingAccount extends Account{
-    private Date startDate;
-    private Date endDate;
+    private LocalDate startDate;
+    private String endDate;
     private int interest;
 
-    public SavingAccount( String name, int customerId, int uniqueId){
-        super(name, customerId, uniqueId);
-        this.startDate = new Date();
-        this.interest = 3;
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTime(new Date());
-        this.endDate = calendar.getTime();
-    }
-    public SavingAccount(String IBAN, String swift, double amount, String name, int customerId, Date startDate, Date endDate, int interest) {
+    public SavingAccount(String IBAN, String swift, double amount, String name, int customerId, LocalDate startDate, String endDate, int interest) {
         super(IBAN, swift, amount, name, customerId);
 
         this.startDate = startDate;
@@ -33,25 +26,25 @@ public class SavingAccount extends Account{
                 ", name='" + name + '\'' +
                 ", customerId=" + customerId +
                 ", cards=" + cards +
-                ", startDate=" + (new SimpleDateFormat("yyyy-MM-dd")).format(startDate) +
-                ", endDate=" + (new SimpleDateFormat("yyyy-MM-dd")).format(endDate) +
+                ", startDate=" + startDate +
+                ", endDate=" + endDate +
                 ", interest=" + interest +
                 '}';
     }
 
-    public Date getStartDate() {
+    public LocalDate getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(Date startDate) {
+    public void setStartDate(LocalDate startDate) {
         this.startDate = startDate;
     }
 
-    public Date getEndDate() {
+    public String getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(Date endDate) {
+    public void setEndDate(String endDate) {
         this.endDate = endDate;
     }
 

@@ -1,6 +1,7 @@
 package Banking;
 
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.Objects;
 
@@ -9,9 +10,9 @@ public class Transaction {
     private String toIBAN;
     private double amount;
     private String description;
-    private String creationDate;
+    private LocalDate creationDate;
 
-    public Transaction(String fromIBAN, String toIBAN, double amount, String description, String creationDate) throws Exception {
+    public Transaction(String fromIBAN, String toIBAN, double amount, String description, LocalDate creationDate) throws Exception {
 
         if(amount <= 0)
             throw new Exception("The given amount is too low!");
@@ -56,11 +57,11 @@ public class Transaction {
         this.description = description;
     }
 
-    public String getCreationDate() {
+    public LocalDate getCreationDate() {
         return creationDate;
     }
 
-    public void setCreationDate(String creationDate) {
+    public void setCreationDate(LocalDate creationDate) {
         this.creationDate = creationDate;
     }
 
@@ -71,7 +72,7 @@ public class Transaction {
                 ", to=" + toIBAN +
                 ", amount=" + amount +
                 ", description='" + description + '\'' +
-                ", creationDate=" + (new SimpleDateFormat("yyyy-MM-dd+HH:MM:SS")).format(creationDate) +
+                ", creationDate=" + creationDate +
                 '}';
     }
 
